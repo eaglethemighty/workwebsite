@@ -1,38 +1,6 @@
-#wrapper{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    /* border: 2px solid saddlebrown; */
-    /* justify-content: space-between; */
-}
 
-body{
-    background-image: linear-gradient(to left, #0575E6, #021B79);
-}
 
-#nav_menu_list{
-    display: flex;
-    justify-content: center;
-}
 
-.nav_menu_list_item{
-    list-style-type: none;
-    padding: 20px;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-}
-
-.nav_menu_list_item img{
-    max-width: 25px;
-    max-height: 25px;
-}
-
-footer{
-    margin-top: auto;
-    font-family: 'Zen Kurenaido', sans-serif;
-    /* border: 2px solid saddlebrown; */
-}
 
 
 
@@ -43,9 +11,7 @@ footer{
 
 /* Tablet */
 @media all and (max_width:1000px){
-    .nav_menu_list_item{
-        width: 50%;
-    }
+
 }
 
 /* Mobile */
