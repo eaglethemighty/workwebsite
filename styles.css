@@ -2,6 +2,8 @@ html {
     box-sizing: border-box;
 }
 *, *:before, *:after {
+    margin: 0;
+    padding: 0;
     box-sizing: inherit;
   }
 
@@ -21,7 +23,7 @@ body{
     background-image: linear-gradient(to left, #0575E6, #021B79);
 }
 
-#nav_menu_list{
+.nav_menu_list{
     display: flex;
     justify-content: center;
     max-width: 1000px;
@@ -73,17 +75,24 @@ footer{
 }
 
 .onMenuClick{
-    display: block;
+    display: flex;
+}
+
+#nav_menu{
+    padding-top: 5vh;
 }
 
 /* Tablet */
 @media all and (max-width:1000px){
-    #nav_menu_list{
+    .nav_menu_list{
         flex-wrap: wrap;
     }
     .nav_menu_list_item{
         flex-basis: 50%;
     }
+    .onMenuClick{
+        display: flex;
+    }    
 }
 
 /* Mobile */
@@ -92,16 +101,11 @@ footer{
     .toggleNavigation{
         display: block;
     }
-
-    /* .toggleNavigation:active{
-
-    } */
-
     .onMenuClick{
         display: none;
     }    
 
-    #nav_menu_list{
+    .nav_menu_list{
         flex-wrap: wrap;
     }
     .nav_menu_list_item{
