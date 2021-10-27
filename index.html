@@ -17,19 +17,21 @@
     </head>
     <body>
         <div id="wrapper">
-            <nav id="nav_menu">
-                <a href="#" class="nav_menu_button toggleNavigation">☰ Menu</a>
-                <ul class="nav_menu_list">
-                    <li class="nav_menu_list_item "> Home </li>
-                    <li class="nav_menu_list_item"> About me </li>
-                    <li class="nav_menu_list_item"> Previous projects </li>
-                    <li class="nav_menu_list_item"> Contact me</li>
-                    <li class="nav_menu_list_item"> <a href="https://github.com/eaglethemighty" alt="href="https://github.com/eaglethemighty" target="_blank"><img  class="nav_icon" src="multimedia/github_icon.png" alt = "https://github.com/eaglethemighty"> </a></li>
-                    <li class="nav_menu_list_item"> <a href="https://gitlab.com/amichalak" alt="https://gitlab.com/amichalak"  target="_blank"><img class="nav_icon" src="multimedia/gitlab_icon.png" alt = "https://gitlab.com/amichalak"> </a></li>
-                </ul>
-            </nav>
-            <footer> <p> @eaglethemighty </p></footer>
+            <div id="floating_nav_dock">
+                <nav id="nav_menu">
+                    <a href="#" class="nav_menu_button toggleNavigation">☰ Menu</a>
+                    <ul class="nav_menu_list">
+                        <li class="nav_menu_list_item "> Home </li>
+                        <li class="nav_menu_list_item"><a class="nav_link" href="#about_me_article"> About me </a></li>
+                        <li class="nav_menu_list_item"> Previous projects </li>
+                        <li class="nav_menu_list_item"> Contact me</li>
+                        <li class="nav_menu_list_item"> <a class="nav_link_anchor" href="https://github.com/eaglethemighty" target="_blank"> <img class="nav_icon" src="multimedia/github_icon.png" alt ="https://github.com/eaglethemighty"/> </a></li>
+                        <li class="nav_menu_list_item"> <a class="nav_link_anchor" href="https://gitlab.com/amichalak" target="_blank"><img class="nav_icon" src="multimedia/gitlab_icon.png" alt = "https://gitlab.com/amichalak"> </a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
+        <footer> <p id="about_me_article"> @eaglethemighty </p></footer>
 
         <script src="main.js"/>
     </body>

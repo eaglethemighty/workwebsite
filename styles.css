@@ -9,7 +9,7 @@ html {
   }
 
 div#wrapper{
-    min-height: 100vh;
+    min-height: 200vh;
     max-width: 1000px;
 
     display: flex;
@@ -80,7 +80,7 @@ footer{
     color: #0575E6;
 
     text-align: center;
-    
+
     max-height: 10vh;
 }
 
@@ -96,10 +96,21 @@ footer{
     padding-top: 5vh;
 }
 
-a{
+.nav_link_anchor{
     display: block;
     padding: 20px;
 }
+
+.nav_link {
+    color: white;
+    text-decoration:none;
+}
+
+/* #floating_nav_dock{
+    position: fixed;
+    
+    top: 0;
+} */
 
 /* Tablet */
 @media all and (max-width:1000px){
