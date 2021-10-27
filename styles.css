@@ -1,11 +1,21 @@
-#wrapper{
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+div#wrapper{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-content: center;
-    /* border: 2px solid saddlebrown; */
-    /* justify-content: space-between; */
+    max-width: 1000px;
+    flex: 1;
+    margin: 0 auto;
 }
+
 
 body{
     background-image: linear-gradient(to left, #0575E6, #021B79);
@@ -14,42 +24,88 @@ body{
 #nav_menu_list{
     display: flex;
     justify-content: center;
+    max-width: 1000px;
+    padding: 0px;
 }
 
 .nav_menu_list_item{
     list-style-type: none;
-    padding: 20px;
     font-family: 'Roboto', sans-serif;
+    background:rgba(0,0,0,0.2);
     color: white;
+    padding: 20px;
+    text-align: center;
+    max-height: 60px;
+    flex-grow: 3;
 }
 
-.nav_menu_list_item img{
-    max-width: 25px;
-    max-height: 25px;
+.nav_icon{
+    max-width: 50px;
+    max-height: 50px;
+    padding: 0px 15px 20px;
+    flex-grow: 1;
+}
+.nav_menu_list_item:hover{
+    background:rgba(0,0,0,0.4);
+}
+
+.nav_menu_button{
+    color:white;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background:rgba(0,0,0,0.2);
+    padding: 20px 5px;
+    width: 100%;
+    text-align: center;
+    transition:all 0.5s;
 }
 
 footer{
-    margin-top: auto;
+    /* margin-top: auto; */
     font-family: 'Zen Kurenaido', sans-serif;
-    /* border: 2px solid saddlebrown; */
+    color: #0575E6;
+    max-height: 10vh;
+    text-align: center;
 }
 
+.toggleNavigation{
+    display: none;
+}
 
-
-
-
-
-
+.onMenuClick{
+    display: block;
+}
 
 /* Tablet */
-@media all and (max_width:1000px){
+@media all and (max-width:1000px){
+    #nav_menu_list{
+        flex-wrap: wrap;
+    }
     .nav_menu_list_item{
-        width: 50%;
+        flex-basis: 50%;
     }
 }
 
 /* Mobile */
-@media all and (max_width:500px){
+@media all and (max-width:500px){
 
+    .toggleNavigation{
+        display: block;
+    }
+
+    /* .toggleNavigation:active{
+
+    } */
+
+    .onMenuClick{
+        display: none;
+    }    
+
+    #nav_menu_list{
+        flex-wrap: wrap;
+    }
+    .nav_menu_list_item{
+        flex-basis: 100%;
+    }
 }
 
