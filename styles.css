@@ -9,14 +9,14 @@ html {
   }
 
 div#wrapper{
-    min-height: 200vh;
     max-width: 1000px;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-content: center;
     flex: 1;
+    flex-grow: 2;
     
     margin: 0 auto;
 }
@@ -30,8 +30,12 @@ body{
     display: flex;
     justify-content: center;
 
+    flex-basis: 100px;
+    flex-grow: 0;
+    flex-shrink: 0;
     max-width: 1000px;
     padding: 20px;
+
 }
 
 .nav_menu_list_item{
@@ -79,8 +83,9 @@ footer{
     font-family: 'Zen Kurenaido', sans-serif;
     color: #0575E6;
 
+    position: relative;
+    top: 100vh;
     text-align: center;
-
     max-height: 10vh;
 }
 
@@ -99,11 +104,27 @@ footer{
 .nav_link_anchor{
     display: block;
     padding: 20px;
+    overflow: hidden;
 }
 
 .nav_link {
     color: white;
     text-decoration:none;
+}
+
+.article{
+    position: relative;
+    top: 90vh;
+    min-height: 100vh;
+}
+
+#contact_me_page{
+    min-height: 30vh;
+}
+
+#home_page{
+    position: relative;
+    min-height: 100vh;
 }
 
 /* Tablet */
