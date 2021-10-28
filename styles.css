@@ -106,12 +106,6 @@ footer{
     text-decoration:none;
 }
 
-/* #floating_nav_dock{
-    position: fixed;
-    
-    top: 0;
-} */
-
 /* Tablet */
 @media all and (max-width:1000px){
     .nav_menu_list{
