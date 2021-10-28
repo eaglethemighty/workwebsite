@@ -22,7 +22,13 @@ div#wrapper{
 }
 
 body{
-    background-image: linear-gradient(to left, #0575E6, #021B79);
+    background-image: linear-gradient(to right, #1A2EC1, #4C6Ad6);
+}
+
+@keyframes WelcomeUser {
+    to {
+        left: 100%;
+    }
 }
 
 .nav_menu_list{
@@ -57,7 +63,7 @@ body{
     max-width: 50px;
     max-height: 50px;
     padding: 0px 15px 20px;
-
+    
     flex-grow: 1;
 }
 .nav_menu_list_item:hover{
@@ -69,12 +75,22 @@ body{
     letter-spacing: 2px;
     text-decoration: none;
     text-align: center;
-
+    
     background:rgba(0,0,0,0.2);
-
+    
     padding: 20px 5px;
     width: 100%;
     
+}
+
+button{
+    background-color: #e7250e;
+    min-width: 100px;
+    min-height: 50px;
+    border: none;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
 }
 
 footer{
@@ -138,6 +154,28 @@ article{
     align-items: center;
     justify-content: center;
 }
+
+.waiting_cursor{
+    cursor: wait;
+}
+
+.animation_area{
+    position: relative;
+}
+
+.introduction_picture{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#welcome_text_div{
+    position: absolute;
+    top: 33%;
+    left: 18%;
+    z-index: 100;
+    max-width: 600px;
+} 
 
 /* Tablet */
 @media all and (max-width:1000px){
