@@ -25,12 +25,6 @@ body{
     background-image: linear-gradient(to right, #1A2EC1, #4C6Ad6);
 }
 
-@keyframes WelcomeUser {
-    to {
-        left: 100%;
-    }
-}
-
 .nav_menu_list{
     display: flex;
     justify-content: center;
@@ -141,13 +135,6 @@ footer{
     min-height: 100vh;
 }
 
-.article_text{
-    color: white;
-    font-family: 'Roboto Mono', monospace;
-    letter-spacing: 1px;
-    padding: 20px;
-}
-
 article{
     display: flex;
     flex-direction: column;
@@ -173,9 +160,20 @@ article{
     position: absolute;
     top: 33%;
     left: 18%;
-    z-index: 100;
     max-width: 600px;
-} 
+}
+
+.article_text{
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 1px;
+    padding: 20px;
+}
+
+.text_visible{
+    opacity: 1;
+    z-index: 100;
+}
 
 /* Tablet */
 @media all and (max-width:1000px){

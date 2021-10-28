@@ -3,6 +3,7 @@ const menuItems = document.querySelector('.nav_menu_list');
 const animationPicture = document.querySelector('.introduction_picture');
 const animationStartButton = document.querySelector('.animation_compilation');
 const globalSettings = document.querySelector('html');
+const animationText = document.getElementById('welcome_text_div');
 
 let menuOpen = true;
 let welcomeAnimationStarted = false;
@@ -49,6 +50,7 @@ function WaitForCompilationAnimation() {
         }
 
         else {
+            animationText.classList?.add('text_visible')
             animationPicture.src = "multimedia/visual_studio_build.PNG";
             globalSettings.classList?.remove('waiting_cursor')
         }
