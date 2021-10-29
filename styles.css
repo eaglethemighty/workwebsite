@@ -84,7 +84,6 @@ body{
     
     padding: 20px 5px;
     width: 100%;
-    
 }
 
 button{
@@ -216,6 +215,12 @@ article{
     padding: 20px;
 }
 
+label{
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 1px;
+}
+
 .text_visible{
     opacity: 1;
     z-index: 10;
@@ -241,7 +246,7 @@ article{
     flex-basis: 99%;
     height: 10vh;
     min-width: 100%;
-    background-color: #e7250e;
+    background:rgba(0,0,0,0.4);
     border-radius: 3vh;
     margin-bottom: 3vh;
     text-align: center;
@@ -254,6 +259,37 @@ article{
 
 h4{
     text-align: center;
+}
+
+.about_me_diagram{
+    max-width: 0%;
+}
+
+.about_me_diagram_resized{
+    max-width: 99%;
+}
+
+#form_div{
+    background:rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form_text{
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 1px;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+button{
+    align-self: center;
+    padding-top: 5%;
 }
 
 /* Tablet */
@@ -271,14 +307,14 @@ h4{
 
 /* Mobile */
 @media all and (max-width:500px){
-
+    
     .toggleNavigation{
         display: block;
     }
     .onMenuClick{
         display: none;
     }    
-
+    
     .nav_menu_list{
         flex-wrap: wrap;
     }

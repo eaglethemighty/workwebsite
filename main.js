@@ -8,6 +8,7 @@ const about_me_article = document.getElementById('about_me_article')
 const about_me_article_text = document.getElementById('about_me_article_text')
 const about_me_button_menu = document.getElementById('about_me_button')
 const about_me_button_homepage = document.getElementById('about_me_button_homepage')
+const about_me_diagram = document.querySelector('.about_me_diagram');
 
 let menuOpen = true;
 let welcomeAnimationStarted = false;
@@ -66,6 +67,9 @@ about_me_button_menu.addEventListener('click', function(){
         about_me_article.classList?.add('slide_up_article_animation');
         about_me_article_text.classList?.add('slide_up_text_animation');
     }, 700);
+    setTimeout(function(){
+        about_me_diagram.classList?.add('about_me_diagram_resized')
+    }, 2700);
 });
 
 about_me_button_homepage.addEventListener('click', function(){
@@ -73,4 +77,7 @@ about_me_button_homepage.addEventListener('click', function(){
         about_me_article.classList?.add('slide_up_article_animation');
         about_me_article_text.classList?.add('slide_up_text_animation');
     }, 700);
+    setTimeout(function(){
+        about_me_diagram.classList?.add('about_me_diagram_resized')
+    }, 2700);
 });
