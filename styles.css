@@ -1,3 +1,8 @@
+:root{
+    --slide_up_animation_time: 2s;
+    --slide_up_animation_end_time: 3s;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -125,26 +130,62 @@ footer{
     text-decoration:none;
 }
 
-.article{
-    position: relative;
-    top: 90vh;
-    min-height: 100vh;
-}
-
 #contact_me_page{
     min-height: 30vh;
 }
 
 #home_page{
     position: relative;
+    min-height: 85vh;
+    justify-content: center;
+}
+
+.article{
+    position: relative;
+    top: 90vh;
     min-height: 100vh;
+    justify-content: center;
 }
 
 article{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+}
+
+#about_me_article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 90vh;
+    min-height: 100vh;
+}
+
+.slide_up_article_animation{
+    animation: slideup_result var(--slide_up_animation_end_time) ease-in;
+}
+
+.slide_up_text_animation{
+    animation: slideup var(--slide_up_animation_time) ease-in;
+}
+
+@keyframes slideup {
+    from{
+        flex: 0;
+    }
+    to{
+        flex: 1;
+    }
+}
+
+@keyframes slideup_result{
+    from{
+        justify-content: center;
+    }
+    to{
+        justify-content: flex-start;
+    }
 }
 
 .waiting_cursor{
@@ -159,7 +200,6 @@ article{
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    transition: opacity 500ms ease-in-out;
 }
 
 #welcome_text_div{
@@ -210,6 +250,10 @@ article{
 .project_images{
     display: flex;
     justify-content: center;
+}
+
+h4{
+    text-align: center;
 }
 
 /* Tablet */

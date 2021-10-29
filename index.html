@@ -21,7 +21,7 @@
                 <a href="#" class="nav_menu_button toggleNavigation">☰ Menu</a>
                 <ul class="nav_menu_list">
                     <li class="nav_menu_list_item "><a class="nav_link" href="#home_page"> Home </a></li>
-                    <li class="nav_menu_list_item"><a class="nav_link" href="#about_me_article"> About me </a></li>
+                    <li class="nav_menu_list_item"><a id="about_me_button" class="nav_link" href="#about_me_article"> About me </a></li>
                     <li class="nav_menu_list_item"><a class="nav_link" href="#previous_projects_article"> Previous projects </a></li>
                     <li class="nav_menu_list_item"><a class="nav_link" href="#contact_me_page"> Contact me </a></li>
                     <li class="nav_menu_list_item"> <a class="nav_link_anchor" href="https://github.com/eaglethemighty" target="_blank"> <img class="nav_icon" src="multimedia/github_icon.png" alt ="https://github.com/eaglethemighty"/> </a></li>
@@ -31,17 +31,18 @@
 
             <article id="home_page">
                 <div id="animation_area">
+                    <div> <h4 class="article_text"> Amadeusz Michalak - software developer </h2></div>
                     <div id="welcome_text_div"><h4 id="welcome_text" class="article_text"> Hi! My name is Amadeusz Michalak and I am a Junior Software Backend Developer. I'm hoping that by browsing this page you will get to know me a little bit better. If you have any questions, contact me through the contact form on this site or message me directly.</h4></div>
                     <img class="introduction_picture" src="multimedia/visual_studio.PNG" alt="Introduction animation" usemap="#introduction_animation_map" height="500" width="770">
                     <map name="introduction_animation_map">
                         <area class ="animation_compilation" shape="rect" coords="438,4,548,28" alt="Computer" href="#">
                     </map>
                 </div>
-                <a class="nav_link" href="#about_me_article"><button href> Learn more </button>  </a>
+                <a class="nav_link" href="#about_me_article"><button id="about_me_button_homepage"> Learn more </button>  </a>
             </article>
 
-            <article id="about_me_article" class="article">
-                <h3 class="article_text"> A few facts about me: </h3>
+            <article id="about_me_article">
+                <h3 class="article_text" id="about_me_article_text"> A few facts about me: </h3>
             </article>
 
             <article id="previous_projects_article" class="article">

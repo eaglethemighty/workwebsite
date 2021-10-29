@@ -4,6 +4,10 @@ const animationPicture = document.querySelector('.introduction_picture');
 const animationStartButton = document.querySelector('.animation_compilation');
 const globalSettings = document.querySelector('html');
 const animationText = document.getElementById('welcome_text_div');
+const about_me_article = document.getElementById('about_me_article')
+const about_me_article_text = document.getElementById('about_me_article_text')
+const about_me_button_menu = document.getElementById('about_me_button')
+const about_me_button_homepage = document.getElementById('about_me_button_homepage')
 
 let menuOpen = true;
 let welcomeAnimationStarted = false;
@@ -56,3 +60,17 @@ function WaitForCompilationAnimation() {
         }
     }, 2000);
 }
+
+about_me_button_menu.addEventListener('click', function(){
+    setTimeout(function(){
+        about_me_article.classList?.add('slide_up_article_animation');
+        about_me_article_text.classList?.add('slide_up_text_animation');
+    }, 700);
+});
+
+about_me_button_homepage.addEventListener('click', function(){
+    setTimeout(function(){
+        about_me_article.classList?.add('slide_up_article_animation');
+        about_me_article_text.classList?.add('slide_up_text_animation');
+    }, 700);
+});
