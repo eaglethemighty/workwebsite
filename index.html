@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <!-- meta -->
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Software Developer, C#, C++, python, backend, Junior">
+        <meta name="author" content="Amadeusz Michalak">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> Amadeusz Michalak - backend developer </title>
+        <link rel="stylesheet" href="styles.css">
+        
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Roboto:wght@300&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="wrapper">
+            <nav id="nav_menu">
+                <a href="#" class="nav_menu_button toggleNavigation">☰ Menu</a>
+                <ul class="nav_menu_list">
+                    <li class="nav_menu_list_item "><a class="nav_link" href="#home_page"> Home </a></li>
+                    <li class="nav_menu_list_item"><a class="nav_link" href="#about_me_article"> About me </a></li>
+                    <li class="nav_menu_list_item"><a class="nav_link" href="#previous_projects_article"> Previous projects </a></li>
+                    <li class="nav_menu_list_item"><a class="nav_link" href="#contact_me_page"> Contact me </a></li>
+                    <li class="nav_menu_list_item"> <a class="nav_link_anchor" href="https://github.com/eaglethemighty" target="_blank"> <img class="nav_icon" src="multimedia/github_icon.png" alt ="https://github.com/eaglethemighty"/> </a></li>
+                    <li class="nav_menu_list_item"> <a class="nav_link_anchor" href="https://gitlab.com/amichalak" target="_blank"><img class="nav_icon" src="multimedia/gitlab_icon.png" alt = "https://gitlab.com/amichalak"> </a></li>
+                </ul>
+            </nav>
+
+            <article id="home_page">
+                <div id="animation_area">
+                    <div id="welcome_text_div"><h4 id="welcome_text" class="article_text"> Hi! My name is Amadeusz Michalak and I am a Junior Software Backend Developer. I'm hoping that by browsing this page you will get to know me a little bit better. If you have any questions, contact me through the contact form on this site or message me directly.</h4></div>
+                    <img class="introduction_picture" src="multimedia/visual_studio.PNG" alt="Introduction animation" usemap="#introduction_animation_map" height="500" width="770">
+                    <map name="introduction_animation_map">
+                        <area class ="animation_compilation" shape="rect" coords="438,4,548,28" alt="Computer" href="#">
+                    </map>
+                </div>
+                <a class="nav_link" href="#about_me_article"><button href> Learn more </button>  </a>
+            </article>
+
+            <article id="about_me_article" class="article">
+                <h3 class="article_text"> A few facts about me: </h3>
+            </article>
+
+            <article id="previous_projects_article" class="article">
+                <h3 class="article_text"> Those are the projects I am the proudest of: </h3>
+
+                <div id="div_project_moto" class="project_section">
+                    <div id="moto_banner" class="banner"> <h3 class="project_text">A motorcycle dashboard backend communication. </h3> </div>
+                    <div class="project_images">
+                        <img class="img_project_moto img_project" src="multimedia/projects/moto/moto_dash.png" alt="Motorcycle dashboard">
+                        <img class="img_project_moto img_project" src="multimedia/projects/moto/moto_map.png" alt="Motorcycle map">
+                    </div>
+                </div>
+
+                <div id="div_project_inicio" class="project_section">
+                    <div id="inicio_banner" class="banner"><h3 class="project_text"> An ERP system for businesses producing industrial machinery. </h3></div>
+                    <div class="project_images">
+                        <img class="img_project_inicio img_project" src="multimedia/projects/inicio/inicio_drzewo.png" alt="ERP order tree">
+                        <img class="img_project_inicio img_project" src="multimedia/projects/inicio/inicio_dashboard.png" alt="ERP dashboard">
+                    </div>
+                </div>
+
+            </article>
+            
+            <article id="contact_me_page" class="article">
+                <h3 class="article_text"> Don't be a stranger!</h3>
+                <h3 class="article_text"> Contact me with any questions.</h3>
+                <form>
+                    <div> <label> e-mail </label> </div>
+                    <div><input></div>
+                    <div><label> message </label></div>
+                    <div><input></div>
+                    <button> Send</button>
+                </form>
+            </article>
+
+            <footer></h3> @eaglethemighty </h3></footer>
+        </div>
+
+        <script src="main.js"/>
+        <!-- font-family: 'Roboto', sans-serif; -->
+        <!-- font-family: 'Sarabun', sans-serif; -->
+        <!-- font-family: 'Zen Kurenaido', sans-serif; -->
+    </body>
+    
+</html>
